@@ -1,0 +1,555 @@
+// 参考サイト : https://code.visualstudio.com/api/references/theme-color
+{
+  "type": "dark",
+  "colors": {
+    "focusBorder": "#919191", //現在フォーカスを持っている要素の境界線の色
+    "foreground": "#FFFFFF", //文字色
+    "widget.shadow": "#3C3C3C", //検索ボックスや通知ダイアログなど、エディタに表示されるウィジェットの影の色
+    "errorForeground": "#FF0000", //エラーメッセージ全般の文字色
+    "editorGroup.border": "#919191", //複数のエディターグループを互いに分離する色。
+    "editorGroup.dropBackground": "#007ACC50", //エディターをドラッグするときの背景色。
+    "selection.background": "#CCCCC7", //選択範囲の背景色
+    "editor.background": "#272822", //エディターの背景色。
+    "editor.foreground": "#FFFFFF", //エディターのデフォルトの前景色。
+    "editorLineNumber.foreground": "#919191", //エディターの行番号の色。
+    "editorLineNumber.activeForeground": "#FFFFFF", //アクティブなエディターの行番号の色。
+    //"editorCursor.background": "", //エディターカーソルの背景色。ブロックカーソルが重なっている文字の色をカスタマイズできます。
+    "editorCursor.foreground": "#FFFFFF", //エディターカーソルの色。
+    "editor.selectionBackground": "#007ACC50", //エディター選択の色。
+    //"editor.selectionForeground": "", //ハイコントラスト用に選択されたテキストの色。
+    "editor.inactiveSelectionBackground": "#91919150", //非アクティブなエディターでの選択の色。下にある装飾を隠さないように、色は不透明であってはなりません。
+    "editor.selectionHighlightBackground": "#00000000", //選択範囲と同じ内容の領域の色。下にある装飾を隠さないように、色は不透明であってはなりません。
+    "editor.selectionHighlightBorder": "#FF900080", //選択範囲と同じ内容の領域の境界線の色。
+    //"editor.wordHighlightBackground": "", //変数の読み取り時など、読み取りアクセス時のシンボルの背景色。下にある装飾を隠さないように、色は不透明であってはなりません。
+    //"editor.wordHighlightBorder": "", //変数の読み取り時など、読み取りアクセス時のシンボルの境界線の色。
+    //"editor.wordHighlightStrongBackground": "", //変数への書き込み時など、書き込みアクセス時のシンボルの背景色。下にある装飾を隠さないように、色は不透明であってはなりません。
+    //"editor.wordHighlightStrongBorder": "", //変数への書き込み時など、書き込みアクセス時のシンボルの境界線の色。
+    "editor.findMatchBackground": "#FF900050", //現在の検索一致の色。
+    "editor.findMatchHighlightBackground": "#00000000", //他の一致する検索の色。下にある装飾を隠さないように、色は不透明であってはなりません。
+    "editor.findRangeHighlightBackground": "#FF000050", //検索を制限する範囲に色を付けます（検索ウィジェットで「選択範囲内を検索」を有効にします）。下にある装飾を隠さないように、色は不透明であってはなりません。
+    "editor.findMatchBorder": "#FF9000", //現在の検索一致の境界線の色。
+    "editor.findMatchHighlightBorder": "#FF9000", //他の検索一致の境界線の色。
+    "editor.findRangeHighlightBorder": "#00800080", //検索を制限する範囲の境界線の色（検索ウィジェットで「選択範囲内を検索」を有効にします）。
+    "searchEditor.findMatchBackground": "#00000000", //エディターの結果の色。
+    "searchEditor.findMatchBorder": "#FF9000", //エディターの結果の境界線の色。
+    //"searchEditor.textInputBorder": "", //検索エディターのテキスト入力ボックスの境界。
+    "editor.hoverHighlightBackground": "#00000000", //ホバーが表示されている単語の下を強調表示します。下にある装飾を隠さないように、色は不透明であってはなりません。
+    "editor.lineHighlightBackground": "#91919150", //カーソル位置の行の強調表示の背景色。
+    //"editor.lineHighlightBorder": "", //カーソル位置の線の周囲の境界線の背景色。
+    "editorLink.activeForeground": "#FF0000", //アクティブなリンクの色。
+    //"editor.rangeHighlightBackground": "", //ハイライトされた範囲の背景色。クイックオープン、ファイル内のシンボル、検索機能で使用されます。下にある装飾を隠さないように、色は不透明であってはなりません。
+    //"editor.rangeHighlightBorder": "", //ハイライトされた範囲の周囲の境界線の背景色。
+    //"editor.symbolHighlightBackground": "", //強調表示されたシンボルの背景色。下にある装飾を隠さないように、色は不透明であってはなりません。
+    //"editor.symbolHighlightBorder": "", //ハイライトされたシンボルの周囲の境界線の背景色。
+    "editorWhitespace.foreground": "#3C3C3C", //エディターの空白文字の色。
+    "editorIndentGuide.background": "#3C3C3C", //エディターのインデントガイドの色。
+    "editorIndentGuide.activeBackground": "#919191", //アクティブなエディターインデントガイドの色。
+    //"editorRuler.foreground": "", //エディター定規の色。
+    //"editorCodeLens.foreground": "", //エディターCodeLensの前景色。
+    //"editorLightBulb.foreground": "", //電球アクションアイコンに使用される色。
+    //"editorLightBulbAutoFix.foreground": "", //電球の自動修正アクションアイコンに使用される色。
+    //"editorBracketMatch.background": "", //一致する括弧ボックスの背景色。
+    "editorBracketMatch.border": "#4EC8FF", //一致する括弧ボックスの色。
+    "editor.foldBackground": "#00FF0020", //折りたたまれた範囲の背景色。下にある装飾を隠さないように、色は不透明であってはなりません。
+    "editorOverviewRuler.background": "#272822", //エディター概要ルーラーの背景色。ミニマップが有効で、エディターの右側に配置されている場合にのみ使用されます。
+    "editorOverviewRuler.border": "#3C3C3C", //概要ルーラーの境界線の色。
+    "editorOverviewRuler.findMatchForeground": "#FF900080", //一致を見つけるための概要ルーラーマーカーの色。下にある装飾を隠さないように、色は不透明であってはなりません。
+    //"editorOverviewRuler.rangeHighlightForeground": "", //クイックオープン、ファイル内のシンボル、検索機能などによる、強調表示された範囲の概要ルーラーマーカーの色。下にある装飾を隠さないように、色は不透明であってはなりません。
+    //"editorOverviewRuler.selectionHighlightForeground": "", //選択ハイライトの概要ルーラーマーカーの色。下にある装飾を隠さないように、色は不透明であってはなりません。
+    //"editorOverviewRuler.wordHighlightForeground": "", //シンボルのハイライトの概要ルーラーマーカーの色。下にある装飾を隠さないように、色は不透明であってはなりません。
+    //"editorOverviewRuler.wordHighlightStrongForeground": "", //書き込みアクセスシンボルのハイライトの概要ルーラーマーカーの色。下にある装飾を隠さないように、色は不透明であってはなりません。
+    "editorOverviewRuler.modifiedForeground": "#FF9800", //変更されたコンテンツの概要ルーラーマーカーの色。
+    "editorOverviewRuler.addedForeground": "#00C300", //追加されたコンテンツの概要ルーラーマーカーの色。
+    "editorOverviewRuler.deletedForeground": "#BA55D3", //削除されたコンテンツの概要ルーラーマーカーの色。
+    "editorOverviewRuler.errorForeground": "#FF0000", //エラーの概要ルーラーマーカーの色。
+    "editorOverviewRuler.warningForeground": "#FFFF00", //警告の概要ルーラーマーカーの色。
+    //"editorOverviewRuler.infoForeground": "", //情報の概要ルーラーマーカーの色。
+    "editorOverviewRuler.bracketMatchForeground": "#FFFFFF", //一致するブラケットの概要ルーラーマーカーの色。
+    "editorError.foreground": "#FF4300", //エディターのエラー波線の前景色。
+    //"editorError.border": "", //エディターのエラーボックスの境界線の色。
+    "editorWarning.foreground": "#FFFF00", //エディターの警告の波線の前景色。
+    //"editorWarning.border": "", //エディターの警告ボックスの境界線の色。
+    //"editorInfo.foreground": "", //エディターの情報の波線の前景色。
+    //"editorInfo.border": "", //エディターの情報ボックスの境界線の色。
+    //"editorHint.foreground": "", //エディターのヒントの前景色。
+    "editorHint.border": "#FF69B4", //エディターのヒントボックスの境界線の色。
+    //"problemErrorIcon.foreground": "", //問題のエラーアイコンに使用される色。
+    //"problemWarningIcon.foreground": "", //問題の警告アイコンに使用される色。
+    //"problemInfoIcon.foreground": "", //問題情報アイコンに使用される色。
+    //"editorUnnecessaryCode.border": "", //エディター内の不要な（未使用）ソースコードの境界線の色。
+    //"editorUnnecessaryCode.opacity": "", //エディター内の不要な（未使用の）ソースコードの不透明度。たとえば、「＃000000c0」は75％の不透明度でコードをレンダリングします。ハイコントラストテーマの場合は、
+    "editorGutter.background": "#272822", //エディターのガターの背景色。ガターには、グリフマージンと行番号が含まれます。
+    "editorGutter.modifiedBackground": "#FF9800", //変更された線のエディターのガターの背景色。
+    "editorGutter.addedBackground": "#00C300", //追加される線のエディターのガターの背景色。
+    "editorGutter.deletedBackground": "#BA55D3", //削除された行のエディターのガターの背景色。
+    "editorGutter.commentRangeForeground": "#919191", //コメント範囲のエディターのガター装飾色。
+    "editorGutter.foldingControlForeground": "#00FF00", //エディターのガターの折りたたみコントロールの色。
+    //"editorGroupHeader.noTabsBackground": "", //タブが無効になっているときのエディターグループのタイトルヘッダーの背景色（「workbench.editor.showTabs」を設定": "", //false）。
+    "editorGroupHeader.tabsBackground": "#272822", //タブコンテナの背景色。
+    "editorGroupHeader.tabsBorder": "#919191", //エディターのタブの下の境界線の色は、タブが有効になるタイミングを制御します。
+    "editorGroupHeader.border": "#919191", //エディターグループヘッダーとエディター間の境界線の色（有効になっている場合は、breadrcumbsの下）。
+    "editorGroup.emptyBackground": "#141414", //空のエディターグループの背景色。
+    "editorGroup.focusedEmptyBorder": "#919191", //フォーカスされている空のエディターグループの境界線の色。
+    "tab.activeBackground": "#272822", //アクティブなグループのアクティブなタブの背景色。
+    "tab.activeForeground": "#FFFFFF", //アクティブなグループのアクティブなタブの前景色。
+    "tab.inactiveBackground": "#3C3C3C", //アクティブなグループの非アクティブなタブの背景色。
+    "tab.inactiveForeground": "#ADADAD", //アクティブなグループの非アクティブなタブの前景色。
+    "tab.activeModifiedBorder": "#FF9000", //アクティブグループ内の変更された（ダーティ）アクティブタブの上部のボーダー。
+    "tab.inactiveModifiedBorder": "#FF9000", //アクティブなグループ内の変更された（ダーティ）非アクティブなタブの上のボーダー。
+    "tab.activeBorder": "#272822", //アクティブなタブの下の境界。
+    "tab.activeBorderTop": "#007ACC", //アクティブなタブの上ボーダー。
+    "tab.border": "#919191", //タブを互いに分離するボーダー。
+    "tab.unfocusedActiveBackground": "#272822", //非アクティブなエディターグループのアクティブなタブの背景色。
+    "tab.unfocusedActiveForeground": "#FFFFFF", //非アクティブなエディターグループのアクティブなタブの前景色。
+    "tab.unfocusedInactiveBackground": "#3C3C3C", //非アクティブなエディターグループの非アクティブなタブの背景色
+    "tab.unfocusedInactiveForeground": "#ADADAD", //非アクティブなエディターグループの非アクティブなタブの前景色。
+    "tab.unfocusedActiveBorder": "#272822", //非アクティブなエディターグループ内のアクティブなタブの下の境界線。
+    "tab.unfocusedActiveBorderTop": "#919191", //非アクティブなエディターグループ内のアクティブなタブの上枠
+    "tab.unfocusedActiveModifiedBorder": "#007ACC", //非アクティブなエディターグループ内の変更された（ダーティー）アクティブなタブの上にあるボーダー。
+    "tab.unfocusedInactiveModifiedBorder": "#007ACC", //非アクティブなエディターグループ内の変更された（ダーティ）非アクティブなタブの上にあるボーダー。
+    "tab.hoverBackground": "#007ACC", //ホバー時のタブの背景色
+    "tab.unfocusedHoverBackground": "#007ACC", //ホバー時のフォーカスされていないグループのタブの背景色
+    "tab.hoverForeground": "#FFFFFF", //ホバー時のタブの前景色
+    "tab.unfocusedHoverForeground": "#FFFFFF", //ホバー時のフォーカスされていないグループのタブの前景色
+    "tab.lastPinnedBorder": "#505050", //固定されたタブとその他のタブを区切るための境界線です。タブはエディター領域内にあるエディターのコンテナーです。複数のタブを 1 つのエディター グループで開くことができます。複数のエディター グループがある可能性があります。
+    //"editorPane.background": "", //中央揃えのエディターレイアウトの左側と右側に表示されるエディターペインの背景色。
+    "menubar.selectionForeground": "#FFFFFF", //メニューバーで選択されたメニュー項目の前景色
+    "menubar.selectionBackground": "#007ACC", //メニューバーで選択されたメニュー項目の背景色
+    "menu.foreground": "#FFFFFF", //メニュー項目の前景色
+    "menu.background": "#272822", //メニュー項目の背景色
+    "menu.selectionForeground": "#FFFFFF", //メニューで選択されたメニュー項目の前景色
+    "menu.selectionBackground": "#007ACC", //メニューで選択されたメニュー項目の背景色
+    "menu.separatorBackground": "#919191", //メニューのセパレータメニュー項目の色
+    "menu.border": "#919191", //メニューのボーダー色
+    "titleBar.activeBackground": "#3C3C3C", //ウィンドウがアクティブな場合のタイトル バーの背景。
+    "titleBar.activeForeground": "#FFFFFF", //ウィンドウがアクティブな場合のタイトル バーの前景。
+    "titleBar.border": "#3C3C3C", //タイトル バーの境界線色。
+    "titleBar.inactiveBackground": "#3C3C3C", //ウィンドウが非アクティブな場合のタイトル バーの背景。
+    "titleBar.inactiveForeground": "#ADADAD", //ウィンドウが非アクティブな場合のタイトル バーの前景。
+    "dropdown.background": "#3C3C3C", //ドロップダウンの背景。
+    "dropdown.listBackground": "#272822", //ドロップダウンリストの背景。
+    "dropdown.border": "#919191", //ドロップダウンの境界。
+    "dropdown.foreground": "#FFFFFF", //ドロップダウンフォアグラウンド。
+    "input.background": "#3C3C3C", //入力ボックスの背景。
+    "input.border": "#919191", //入力ボックスの境界。
+    "input.foreground": "#FFFFFF", //入力ボックスの前景。
+    "input.placeholderForeground": "#919191", //プレースホルダーテキストの入力ボックスの前景色。
+    "inputOption.activeBackground": "#007ACC", //入力フィールドのアクティブ化されたオプションの背景色。
+    "inputOption.activeBorder": "#007ACC", //入力フィールドのアクティブ化されたオプションの境界線の色。
+    "inputOption.activeForeground": "#FFFFFF", //入力フィールドのアクティブ化されたオプションの前景色。
+    //"inputValidation.errorBackground": "", //エラーの重大度の入力検証の背景色。
+    //"inputValidation.errorForeground": "", //エラーの重大度の入力検証前景色。
+    //"inputValidation.errorBorder": "", //エラーの重大度の入力検証境界線の色。
+    //"inputValidation.infoBackground": "", //情報の重要度の入力検証の背景色。
+    //"inputValidation.infoForeground": "", //情報の重要度の入力検証前景色。
+    //"inputValidation.infoBorder": "", //情報の重要度の入力検証境界線の色。
+    //"inputValidation.warningBackground": "", //情報警告の入力検証の背景色。
+    //"inputValidation.warningForeground": "", //警告の重大​​度の入力検証前景色。
+    //"inputValidation.warningBorder": "", //警告の重大​​度の入力検証境界色。
+    "button.background": "#565656", //ボタンの背景色。
+    "activityBar.background": "#3C3C3C", //アクティビティバーの背景色。
+    "activityBar.dropBorder": "#007ACC", //アクティビティバーアイテムのフィードバックの色をドラッグアンドドロップします。 アクティビティバーは左端または右端に表示され、サイドバーのビューを切り替えることができます。
+    "activityBar.foreground": "#FFFFFF", //アクティビティバーの前景色（たとえば、アイコンに使用）。
+    "activityBar.inactiveForeground": "#919191", //アクティブでないときのアクティビティバーアイテムの前景色。
+    "activityBar.border": "#919191", //サイドバーとのアクティビティバーの境界線の色。
+    "activityBarBadge.background": "#007ACC", //アクティビティ通知バッジの背景色。
+    "activityBarBadge.foreground": "#FFFFFF", //アクティビティ通知バッジの前景色。
+    "activityBar.activeBorder": "#007ACC", //アクティビティバーのアクティブインジケーターの境界線の色。
+    "activityBar.activeBackground": "#282722", //アクティブな要素のアクティビティバーのオプションの背景色。
+    //"activityBar.activeFocusBorder": "", //アクティブアイテムのアクティビティバーフォーカスの境界線の色。
+    "sideBar.background": "#282722", //サイドバーの背景色。
+    "sideBar.foreground": "#FFFFFF", //サイドバーの前景色。 サイドバーは、エクスプローラーや検索などのビューのコンテナーです。
+    "sideBar.border": "#919191", //エディターを分割する側のサイドバーのボーダー色。
+    //"sideBar.dropBackground": "", //サイドバーセクションのフィードバックカラーをドラッグアンドドロップします。 サイドバーの部分が透けて見えるように、色は透明でなければなりません。
+    "sideBarTitle.foreground": "#FFFFFF", //サイドバーのタイトルの前景色。
+    "sideBarSectionHeader.background": "#3C3C3C", //サイドバーセクションヘッダーの背景色。
+    "sideBarSectionHeader.foreground": "#FFFFFF", //サイドバーセクションヘッダーの前景色。
+    "sideBarSectionHeader.border": "#9C9C9C", //サイドバーセクションヘッダーの境界線の色。
+    "statusBar.background": "#007ACC", //標準のステータスバーの背景色。
+    "statusBar.foreground": "#FFFFFF", //ステータスバーの前景色。
+    "statusBar.border": "#007ACC", //ステータスバーとエディターを分けるステータスバーの境界線の色。
+    "statusBar.debuggingBackground": "#008000", //プログラムのデバッグ中のステータスバーの背景色。
+    "statusBar.debuggingForeground": "#FFFFFF", //プログラムがデバッグされているときのステータスバーの前景色。
+    "statusBar.debuggingBorder": "#008000", //プログラムのデバッグ時にステータスバーとエディターを分けるステータスバーの境界線の色。
+    "statusBar.noFolderForeground": "#FFFFFF", //フォルダが開かれていないときのステータスバーの前景色。
+    "statusBar.noFolderBackground": "#007ACC", //フォルダが開かれていないときのステータスバーの背景色。
+    "statusBar.noFolderBorder": "#007ACC", //フォルダーが開かれていない場合の、ステータスバーとエディターを分けるステータスバーの境界線の色。
+    //"statusBarItem.activeBackground": "", //クリック時のステータスバー項目の背景色。
+    "statusBarItem.hoverBackground": "#FFFFFF50", //ホバー時のステータスバーアイテムの背景色。
+    //"statusBarItem.prominentForeground": "", //ステータスバーの目立つアイテムの前景色。
+    //"statusBarItem.prominentBackground": "", //ステータスバーの目立つアイテムの背景色。
+    //"statusBarItem.prominentHoverBackground": "", //ホバー時のステータスバーの目立つアイテムの背景色。
+    //"statusBarItem.remoteBackground": "", //ステータスバーのリモートインジケーターの背景色。
+    //"statusBarItem.remoteForeground": "", //ステータスバーのリモートインジケーターの前景色。
+    "minimap.findMatchHighlight": "#FF9900", //ファイル内の検索からの一致のハイライト色。
+    "minimap.selectionHighlight": "#007ACC90", //エディター選択のハイライト色。
+    "minimap.errorHighlight": "#FF0000", //エディター内のエラーのハイライト色。
+    "minimap.warningHighlight": "#FFFF00", //エディター内の警告のハイライト色。
+    "minimap.background": "#272822", //ミニマップの背景色。
+    "minimapSlider.background": "#91919150", //ミニマップスライダーの背景色。
+    "minimapSlider.hoverBackground": "#007ACC50", //ホバー時のミニマップスライダーの背景色。
+    "minimapSlider.activeBackground": "#007ACC90", //クリックされたときのミニマップスライダーの背景色。
+    "minimapGutter.addedBackground": "#00C300", //追加されたコンテンツのミニマップの樋の色。
+    "minimapGutter.modifiedBackground": "#FF9800", //変更されたコンテンツのミニマップの樋の色。
+    "minimapGutter.deletedBackground": "#BA55D3", //削除されたコンテンツのミニマップの樋の色。
+    "list.activeSelectionBackground": "#3C3C3C", //リスト/ツリーがアクティブなときの選択されたアイテムのリスト/ツリーの背景色。
+    "list.activeSelectionForeground": "#FFFFFF", //リスト/ツリーがアクティブなときの選択されたアイテムのリスト/ツリーの前景色。
+    "list.dropBackground": "#3C3C3C", //マウスを使用して項目を移動するときに、リスト/ツリーの背景をドラッグアンドドロップします。
+    "list.focusBackground": "#3C3C3C", //リスト/ツリーがアクティブなときのフォーカスされたアイテムのリスト/ツリーの背景色。
+    "list.focusForeground": "#FFFFFF", //リスト/ツリーがアクティブなときのフォーカスされたアイテムのリスト/ツリーの前景色。アクティブリスト/ツリーにはキーボードフォーカスがありますが、非アクティブリストにはありません。
+    "list.highlightForeground": "#FFFFFF", //リスト/ツリー内を検索するときの一致ハイライトのリスト/ツリーの前景色。
+    "list.hoverBackground": "#007ACC", //マウスを使用して項目の上にホバーしたときのリスト/ツリーの背景。
+    "list.hoverForeground": "#FFFFFF", //マウスを使用して項目の上にホバーしたときのリスト/ツリーの前景。
+    "list.inactiveSelectionBackground": "#3C3C3C", //リスト/ツリーが非アクティブのときの選択されたアイテムのリスト/ツリーの背景色。
+    "list.inactiveSelectionForeground": "#FFFFFF", //リスト/ツリーが非アクティブのときの選択されたアイテムのリスト/ツリーの前景色。アクティブリスト/ツリーにはキーボードフォーカスがありますが、非アクティブリストにはありません。
+    "list.inactiveFocusBackground": "#007ACC", //リストが非アクティブのときのフォーカスされたアイテムのリストの背景色。アクティブリストにはキーボードフォーカスがありますが、非アクティブリストにはありません。現在、リストでのみサポートされています。
+    "list.invalidItemForeground": "#ABABAB", //エクスプローラの未解決のルートなど、無効なアイテムのリスト/ツリーの前景色。
+    "list.errorForeground": "#FF7676", //エラーを含むリストアイテムの前景色。
+    "list.warningForeground": "#FFFF00", //警告を含むリストアイテムの前景色。
+    "listFilterWidget.background": "#007ACC", //リスト/ツリーリスト/ツリー内を検索するときに、入力したテキストの背景色をフィルターします。
+    "listFilterWidget.outline": "#FFFF00", //リスト/ツリー内を検索するときの、入力されたテキストのリスト/ツリーフィルターウィジェットのアウトライン色。
+    //"listFilterWidget.noMatchesOutline": "", //リスト/ツリー内を検索するときに入力したテキストに一致するものが見つからない場合のリスト/ツリーフィルターウィジェットのアウトラインの色。
+    "list.filterMatchBackground": "#007ACC", //リストとツリーで一致するフィルターの背景色。
+    //"list.filterMatchBorder": "", //リストとツリーでフィルターされた一致の境界線の色。
+    "tree.indentGuidesStroke": "#FFFFFF", //インデントガイドのツリーウィジェットのストロークの色。
+    //"list.deemphasizedForeground": "", //強調解除されたアイテムのリスト/ツリーの前景色。
+    "panel.background": "#282722", //パネルの背景色。
+    "panel.border": "#919191", //エディターからパネルを分離するためのパネル境界線の色。
+    //"panel.dropBorder": "", //パネルタイトルのフィードバックカラーをドラッグアンドドロップします。パネルはエディター領域の下に表示され、出力や統合ターミナルなどのビューが含まれています。
+    "panelTitle.activeBorder": "#007ACC", //アクティブなパネルタイトルのボーダー色。
+    "panelTitle.activeForeground": "#FFFFFF", //アクティブなパネルのタイトルの色。
+    "panelTitle.inactiveForeground": "#919191", //非アクティブなパネルのタイトルの色。
+    //"panelInput.border": "", //パネルの入力用の入力ボックス境界。
+    //"panelSection.border": "", //複数のビューがパネルに水平に積み重ねられているときに使用されるパネルセクションの境界線の色。パネルはエディター領域の下に表示され、出力や統合ターミナルなどのビューが含まれています。
+    //"panelSection.dropBackground": "", //パネルセクションのフィードバックカラーをドラッグアンドドロップします。パネルセクションがまだ透けて見えるように、色には透明度が必要です。パネルはエディター領域の下に表示され、出力や統合ターミナルなどのビューが含まれています。
+    //"panelSectionHeader.background": "", //パネルセクションヘッダーの背景色。パネルはエディター領域の下に表示され、出力や統合ターミナルなどのビューが含まれています。
+    //"panelSectionHeader.foreground": "", //パネルセクションヘッダーの前景色。パネルはエディター領域の下に表示され、出力や統合ターミナルなどのビューが含まれています。
+    //"panelSectionHeader.border": "", //複数のビューがパネルに垂直に積み重ねられるときに使用されるパネルセクションヘッダーの境界線の色。パネルはエディター領域の下に表示され、出力や統合ターミナルなどのビューが含まれています。
+    "peekView.border": "#3655b5", //ピーク ビューの境界と矢印の色。
+    "pickerGroup.foreground": "#b0b0b0", //ラベルをグループ化するためのクリック選択の色。
+    "badge.background": "#007ACC",
+    "terminal.background": "#272822", //統合ターミナルのビューポートの背景。
+    //"terminal.border": "", //端末内の分割ペインを区切る境界線の色。デフォルトはpanel.borderです。
+    //"terminal.foreground": "", //統合ターミナルのデフォルトの前景色。
+    //"terminal.ansiBlack": "", //ターミナルの 'Black' ANSIカラー。
+    //"terminal.ansiBlue": "", //ターミナルの「Blue」ANSIカラー。
+    //"terminal.ansiBrightBlack": "", //端末の 'BrightBlack' ANSIカラー。
+    //"terminal.ansiBrightBlue": "", //端末の 'BrightBlue' ANSIカラー。
+    //"terminal.ansiBrightCyan": "", //ターミナルの 'BrightCyan' ANSIカラー。
+    //"terminal.ansiBrightGreen": "", //ターミナルの「BrightGreen」ANSIカラー。
+    //"terminal.ansiBrightMagenta": "", //端末の 'BrightMagenta' ANSIカラー。
+    //"terminal.ansiBrightRed": "", //ターミナルの「BrightRed」ANSIカラー。
+    //"terminal.ansiBrightWhite": "", //ターミナルの「BrightWhite」ANSIカラー。
+    //"terminal.ansiBrightYellow": "", //ターミナルの 'BrightYellow' ANSIカラー。
+    //"terminal.ansiCyan": "", //ターミナルの「シアン」ANSIカラー。
+    //"terminal.ansiGreen": "", //端末の「緑」のANSI色。
+    //"terminal.ansiMagenta": "", //端末の「マゼンタ」ANSIカラー。
+    //"terminal.ansiRed": "", //端末の「赤」のANSI色。
+    //"terminal.ansiWhite": "", //ターミナルの「ホワイト」ANSIカラー。
+    //"terminal.ansiYellow": "", //端末の「黄色」のANSI色。
+    //"terminal.selectionBackground": "", //端末の選択背景色。
+    //"terminalCursor.background": "", //端末カーソルの背景色。ブロックカーソルが重なっている文字の色をカスタマイズできます。
+    //"terminalCursor.foreground": "", //ターミナルカーソルの前景色。
+  },
+  "tokenColors": [
+    {
+      "settings": {
+        "foreground": "#F8F8F2"
+      }
+    },
+    {
+      "scope": [
+        "meta.embedded",
+        "source.groovy.embedded"
+      ],
+      "settings": {
+        "foreground": "#F8F8F2"
+      }
+    },
+    {
+      "name": "Comment",
+      "scope": "comment",
+      "settings": {
+        "foreground": "#919191"
+      }
+    },
+    {
+      "name": "String",
+      "scope": "string",
+      "settings": {
+        "foreground": "#B881FF"
+      }
+    },
+    {
+      "name": "Number",
+      "scope": "constant.numeric",
+      "settings": {
+        "foreground": "#FF82FF"
+      }
+    },
+    {
+      "name": "Built-in constant",
+      "scope": "constant.language",
+      "settings": {
+        "foreground": "#66d9ef" //"#69B4A0"
+      }
+    },
+    {
+      "name": "User-defined constant",
+      "scope": [
+        "constant.character",
+        "constant.other"
+      ],
+      "settings": {
+        "foreground": "#D2ADFF"
+      }
+    },
+    {
+      "name": "Variable",
+      "scope": "variable",
+      "settings": {
+        "foreground": "#F8F8F2"
+      }
+    },
+    {
+      "name": "Keyword",
+      "scope": "keyword",
+      "settings": {
+        "foreground": "#FFCC00"
+      }
+    },
+    {
+      "name": "Storage",
+      "scope": "storage",
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#FF4300"
+      }
+    },
+    {
+      "name": "Storage type",
+      "scope": "storage.type",
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#FF6400"
+      }
+    },
+    {
+      "name": "Class name",
+      "scope": "entity.name.class",
+      "settings": {
+        "fontStyle": "underline",
+        "foreground": "#00A2FF"
+      }
+    },
+    {
+      "name": "Inherited class",
+      "scope": "entity.other.inherited-class",
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#61C5FF"
+      }
+    },
+    {
+      "name": "Macro",
+      "scope": "entity.name.function.preprocessor",
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#5D9CBF"
+      }
+    },
+    {
+      "name": "Function name",
+      "scope": "entity.name.function",
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#00FF00"
+      }
+    },
+    {
+      "name": "Function argument",
+      "scope": "variable.parameter",
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#FD971F"
+      }
+    },
+    {
+      "name": "Library function",
+      "scope": "support.function",
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#00FFFF"
+      }
+    },
+    {
+      "name": "Library constant",
+      "scope": "support.constant",
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#66D9EF"
+      }
+    },
+    {
+      "name": "Library class/type",
+      "scope": [
+        "support.type",
+        "support.class"
+      ],
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#66D9EF"
+      }
+    },
+    {
+      "name": "Library variable",
+      "scope": "support.other.variable",
+      "settings": {
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "Invalid",
+      "scope": "invalid",
+      "settings": {
+        "foreground": "#cf433e",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "Invalid deprecated",
+      "scope": "invalid.deprecated",
+      "settings": {
+        "foreground": "#cf433e"
+      }
+    },
+    {
+      "name": "JSON String",
+      "scope": "meta.structure.dictionary.json string.quoted.double.json",
+      "settings": {
+        "foreground": "#FFCC00"
+      }
+    },
+    {
+      "scope": "token.info-token",
+      "settings": {
+        "foreground": "#6796e6"
+      }
+    },
+    {
+      "scope": "token.warn-token",
+      "settings": {
+        "foreground": "#cd9731"
+      }
+    },
+    {
+      "scope": "token.error-token",
+      "settings": {
+        "foreground": "#f44747"
+      }
+    },
+    {
+      "scope": "token.debug-token",
+      "settings": {
+        "foreground": "#b267e6"
+      }
+    },
+    {
+      "name": "Markup Headings",
+      "scope": "markup.heading.markdown",
+      "settings": {
+        "foreground": "#00FF00"
+      }
+    },
+    {
+      "name": "Markdown Quote",
+      "scope": "markup.quote.markdown",
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#75715E"
+      }
+    },
+    {
+      "name": "Markdown Bold",
+      "scope": "markup.bold.markdown",
+      "settings": {
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Markdown Link Title/Description",
+      "scope": "string.other.link.title.markdown,string.other.link.description.markdown",
+      "settings": {
+        "foreground": "#B881FF"
+      }
+    },
+    {
+      "name": "Markdown Underline Link/Image",
+      "scope": "markup.underline.link.markdown,markup.underline.link.image.markdown",
+      "settings": {
+        "foreground": "#007ACC"
+      }
+    },
+    {
+      "name": "Markdown Emphasis",
+      "scope": "markup.italic.markdown",
+      "settings": {
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": "markup.strikethrough",
+      "settings": {
+        "fontStyle": "strikethrough"
+      }
+    },
+    {
+      "name": "Markdown Punctuation Definition Link",
+      "scope": "markup.list.unnumbered.markdown, markup.list.numbered.markdown",
+      "settings": {
+        "foreground": "#f8f8f2"
+      }
+    },
+    {
+      "name": "Markdown List Punctuation",
+      "scope": [
+        "punctuation.definition.list.begin.markdown"
+      ],
+      "settings": {
+        "fontStyle": "bold",
+        "foreground": "#FFCC00"
+      }
+    },
+    {
+      "name": "diff.deleted",
+      "scope": "markup.deleted",
+      "settings": {
+        "foreground": "#FF938A"
+      }
+    },
+    {
+      "name": "diff.inserted",
+      "scope": "markup.inserted",
+      "settings": {
+        "foreground": "#8DDB8C"
+      }
+    },
+    {
+      "name": "Tag name",
+      "scope": "entity.name.tag",
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#66D9EF"
+      }
+    },
+    {
+      "name": "Tag attribute",
+      "scope": "entity.other.attribute-name",
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#00C300"
+      }
+    }
+  ],
+  "semanticHighlighting": true
+}

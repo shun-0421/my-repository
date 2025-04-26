@@ -1,0 +1,23 @@
+{
+	"name": "MyTheme",
+	"displayName": "%displayName%",
+	"description": "%description%",
+	"version": "1.0.0",
+	"publisher": "vscode",
+	"license": "MIT",
+	"engines": {
+		"vscode": "*"
+	},
+	"contributes": {
+		"themes": [
+			{
+				"label": "MyTheme",
+				"uiTheme": "vs-dark",
+				"path": "./themes/my-color-theme.json"
+			}
+		]
+	},
+	"__metadata": {
+		"size": 45239
+	}
+}

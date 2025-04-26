@@ -1,0 +1,8 @@
+myTheme
+C:\Users\shun\.vscode\extensions\theme-myTheme
+
+アイコン
+C:\Users\shun\AppData\Local\Programs\Microsoft VS Code\resources\app\resources\win32
+
+設定ファイル
+C:\Users\shun\AppData\Roaming\Code\User\settings.json
